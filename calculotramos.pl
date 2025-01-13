@@ -45,7 +45,7 @@ for z in range(1000,100100,100):
     totm = cuota(zm)
     totp = cuota(zp)
 
-    net = ((zp-totp)-(z-tot))/(z-tot)*100
+    net = ((zp-totp-cuotass(zp))-(z-tot-cuotass(z)))/(z-tot-cuotass(z))*100
 
     p.append(net)
     dif = (totm-tot)*100
