@@ -1,10 +1,13 @@
 from matplotlib import pyplot as plt
 import numpy as np
 
+def cuotass(u):
+    ss = 0.067*min(u,12*4495.50 )
+    return ss
 
 def cuota(u):
 
-    ss = 0.067*min(u,12*4495.50 )
+    ss = cuotass(u)
     u = u-ss
     u = u-2000
 
